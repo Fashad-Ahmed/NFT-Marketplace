@@ -28,7 +28,7 @@ const Home = () => {
         <View style={{ zIndex: 0 }}>
           <FlatList
             data={nftData}
-            renderItem={({ item }) => <Text> {item.name} </Text>}
+            renderItem={({ item }) => <NFTCard data={item} />}
             keyExtractor={(item) => item.id}
             showsVerticalScrollIndicator={false} // remove the scroll bar
             ListHeaderComponent={<HomeHeader />}
